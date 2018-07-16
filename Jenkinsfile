@@ -22,11 +22,5 @@ pipeline {
                 sh 'npm test'
             }
         }
-        stage('Deployment') {
-            steps {
-                echo 'Deploying...'
-                sh 'npm start'
-            }
-        }
     }
 }
